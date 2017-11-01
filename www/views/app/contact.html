@@ -1,0 +1,45 @@
+<ion-view class="contact-view">
+  <ion-nav-title>
+    <span>Contato</span>
+  </ion-nav-title>
+  <ion-content>
+    <div>
+      <map data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
+        <marker
+          position="{{position.lat}},{{position.lng}}"
+          title="Imuno Center"
+          visible="true">
+        </marker>
+      </map>
+    </div>
+    <div class="contact-content">
+      <div class="">
+        <p>
+          Nossa Central de Relacionamento está preparada para auxiliá-lo durante todo processo de Solicitação/Prescrição. Leia atentamente as instruções para pedidos e as orientações para conservação de Produtos Alergênicos. Em caso de dúvida, teremos  grande prazer em atendê-lo.
+        </p>
+      </div>
+      <div class="contact-details-item">
+        <h4>Endereço</h4>
+        <div class="featured">Das 8:00 as 17:30</div>
+        <div>RUA DA MATRIZ, 39 – BOTAFOGO</div>
+        <div>RIO DE JANEIRO – RJ</div>
+      </div>
+      <div class="contact-details-item">
+        <h4>Redes Sociais</h4>
+        <div class="row social-networks" dynamic-anchor-fix>
+          <div class="col"><a href="http://twitter.com/imunocenter"><i class="icon ion-social-twitter twitter-icon"></i></a></div>
+          <div class="col"><a href="http://facebook.com/imunocenter"><i class="icon ion-social-facebook facebook-icon"></i></a></div>
+          <div class="col"><a href="http://dribbble.com"><i class="icon ion-social-dribbble dribbble-icon"></i></a></div>
+          <div class="col"><a href="http://google.com/imunocenter"><i class="icon ion-social-rss rss-icon"></i></a></div>
+          <div class="col"><a href="http://pinterest.com"><i class="icon ion-social-pinterest pinterest-icon"></i></a></div>
+        </div>
+      </div>
+      <div class="send-email">
+        <button class="button button-outline button-block featured" ng-controller="EmailSenderCtrl" ng-click="sendContactMail()">
+          Envie-nos um e-mail.
+        </button>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
